@@ -1,0 +1,1 @@
+select t.hometown, avg(cp.level) "Average level of hometown's Pokemon" from Trainer t, CatchedPokemon cp where t.id = cp.owner_id group by t.hometown order by avg(cp.level);

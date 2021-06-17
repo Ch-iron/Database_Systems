@@ -1,0 +1,1 @@
+select p.type from Pokemon p, Evolution e where p.id = e.before_id group by p.type having count(*) >= 3 order by p.type desc;

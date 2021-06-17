@@ -1,0 +1,1 @@
+select count(*) "Count Catched Pokemon Type" from Pokemon p, CatchedPokemon cp where p.id = cp.pid group by p.type order by p.type;

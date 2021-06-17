@@ -1,0 +1,2 @@
+select p.name from Pokemon p, (select * from (select a.before_id "First", a.after_id "Second", b.after_id "Third" 
+from Evolution a left join Evolution b on a.after_id = b.before_id) a where a.Third is null) fe where p.id = fe.Second order by p.name;

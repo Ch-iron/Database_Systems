@@ -1,0 +1,1 @@
+select t.name from Trainer t, CatchedPokemon cp where t.id = cp.owner_id group by cp.owner_id, cp.pid having count(*) >= 2 order by t.name;

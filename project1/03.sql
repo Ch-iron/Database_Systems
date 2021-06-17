@@ -1,0 +1,2 @@
+select avg(cp.level) as "Average Level(Sangnok City's Eletric)" from Trainer t, Pokemon p, CatchedPokemon cp where t.id = cp.owner_id and p.id = cp.pid 
+and t.hometown = "Sangnok City" and p.type = "Electric";

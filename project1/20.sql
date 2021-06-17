@@ -1,0 +1,1 @@
+select t.name, count(*) "Count Catched Pokemon(Sangnok City)" from Trainer t, CatchedPokemon cp where t.id = cp.owner_id and t.hometown = "Sangnok City" group by t.id order by count(*);

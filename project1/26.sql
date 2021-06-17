@@ -1,0 +1,1 @@
+select p.name from Pokemon p, CatchedPokemon cp where p.id = cp.pid and cp.nickname like "% %" order by p.name desc;

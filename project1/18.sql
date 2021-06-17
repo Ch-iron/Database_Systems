@@ -1,0 +1,1 @@
+select avg(cp.level) "Average level of leader's Pokemons" from Gym g, CatchedPokemon cp where g.leader_id = cp.owner_id;

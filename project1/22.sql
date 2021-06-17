@@ -1,0 +1,1 @@
+select type, count(*) "Count type" from Pokemon group by type order by count(*) asc, type asc;

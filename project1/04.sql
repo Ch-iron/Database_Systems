@@ -1,0 +1,1 @@
+select nickname from CatchedPokemon cp where level >= 50 order by nickname;

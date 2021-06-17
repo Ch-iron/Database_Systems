@@ -1,0 +1,2 @@
+select t.name, sum(cp.level) "Sum level of Trainer's Pokemon" from Trainer t, CatchedPokemon cp where t.id = cp.owner_id group by t.name 
+having sum(cp.level) = (select max(a.Sum) from (select sum(level) "Sum" from CatchedPokemon group by owner_id) a) order by t.name;

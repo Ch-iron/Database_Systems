@@ -1,0 +1,1 @@
+select distinct p.name, p.type from Pokemon p, CatchedPokemon cp where p.id = cp.pid and cp.level >= 30 order by p.name;

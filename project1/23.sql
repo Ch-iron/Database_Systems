@@ -1,0 +1,1 @@
+select distinct t.name from Trainer t, CatchedPokemon cp where t.id = cp.owner_id and level <= 10 order by t.name;

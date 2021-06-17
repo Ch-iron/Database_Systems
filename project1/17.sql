@@ -1,0 +1,1 @@
+select count(distinct cp.pid) "Count Kind of Pokemon(Sangnok City)" from Trainer t, CatchedPokemon cp where t.id = cp.owner_id and t.hometown = "Sangnok City";

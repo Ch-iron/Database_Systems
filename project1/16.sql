@@ -1,0 +1,1 @@
+select count(*) "Count(Water, Electric, Psychic)" from Pokemon where type = "Water" or type = "Electric" or type = "Psychic";

@@ -1,0 +1,1 @@
+select avg(cp.level) "Average Red's Pokemon level" from Trainer t, CatchedPokemon cp where t.id = cp.owner_id and t.name = "Red";

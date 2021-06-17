@@ -1,0 +1,1 @@
+select count(distinct type) "Count type(Sangnok City's leader)" from Gym g, Pokemon p, CatchedPokemon cp where g.leader_id = cp.owner_id and p.id = cp.pid and g.city = "Sangnok City";

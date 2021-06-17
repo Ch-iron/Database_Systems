@@ -1,0 +1,1 @@
+select sum(cp.level) "Sum level of Matis's Pokemon" from Trainer t, CatchedPokemon cp where t.id = cp.owner_id and t.name = "Matis";

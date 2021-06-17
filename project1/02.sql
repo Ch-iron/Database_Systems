@@ -1,0 +1,2 @@
+select p.name from Pokemon p, (select t.type, t.count, (select count(*) + 1 from (select type, count(*) count from Pokemon group by type) y where y.count > t.count) rank 
+from (select type, count(*) count from Pokemon group by type) t) r where p.type = r.type and r.rank <= 2 order by p.name;
